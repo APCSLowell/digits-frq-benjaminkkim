@@ -6,17 +6,10 @@ public class Digits
 	private ArrayList<Integer> digitList;
 
 	public Digits(int num) {
-		String numtoString = Integer.toString(num);
-		int count = 0;
-		for(int i = 0; i < numtoString.length(); i++) {
-			count++;
-		}
-		int start = 0;
-		int end = 1;
-		for(int j = 0; j < count; j++) {
-			digitList.add(numtoString.substring(start, end));
-			start++;
-			end++;
+		digitList = new ArrayList <Integer>();
+		String numToString = "" + num;
+		for(int i = 0; i < numToString.length(); i++) {
+			digitList.add(numToString.charAt(i) - '0');
 		}
 	}
 
