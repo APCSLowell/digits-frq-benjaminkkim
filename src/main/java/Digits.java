@@ -6,7 +6,7 @@ public class Digits
 	private ArrayList<Integer> digitList;
 
 	public Digits(int num) {
-		String numtoString = toString(num);
+		String numtoString = Integer.toString(num);
 		int count = 0;
 		for(int i = 0; i < numtoString.length(); i++) {
 			count++;
